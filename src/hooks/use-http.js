@@ -10,7 +10,7 @@ const useHttp = () => {
     // 여기서 set함수를 호출해 상태 변화가 일어나게 되면 이 커스텀 훅을 사용하는 컴포넌트에 재평가를 일으켜 리렌더링이 일어남.
     try {
       const response = await fetch(
-        // "https://react-http-4bb01-default-rtdb.firebaseio.com/tasks.json" requestConfig라는 객체를 줘서 유연하게 사용할 수 있도록 만든다
+        //  requestConfig라는 객체를 줘서 유연하게 사용할 수 있도록 만든다
         requestConfig.url,
         {
           method: requestConfig.method ? requestConfig.method : "GET",
